@@ -8,7 +8,7 @@ module.exports = {
     "plugin:react/jsx-runtime",
     "plugin:react-hooks/recommended",
   ],
-  ignorePatterns: ["dist", ".eslintrc.cjs"],
+  ignorePatterns: ["dist"],
   parserOptions: { ecmaVersion: "latest", sourceType: "module" },
   settings: { react: { version: "18.2" } },
   plugins: ["react-refresh"],
@@ -17,10 +17,11 @@ module.exports = {
       "warn",
       { allowConstantExport: true },
     ],
-    "no-unused-vars": [
-      "warn",
-      { argsIgnorePattern: "^_", varsIgnorePattern: "^_" },
-    ],
-    "no-use-before-define": ["warn", { functions: true, classes: true }],
+    "react/jsx-no-undef": "off",
+    "react/prop-types": "off",
+    "no-unused-vars": "warn",
+
+    "react-hooks/exhaustive-deps": "warn",
+    "react/jsx-key": "warn",
   },
 };
