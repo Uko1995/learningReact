@@ -29,6 +29,15 @@ const variations = {
       background-color: var(--color-brand-700);
     }
   `,
+  form: css`
+    color: var(--color-brand-50);
+    background-color: var(--color-brand-600);
+    width: 100%;
+
+    &:hover {
+      background-color: var(--color-brand-700);
+    }
+  `,
   secondary: css`
     color: var(--color-grey-600);
     background: var(--color-grey-0);
